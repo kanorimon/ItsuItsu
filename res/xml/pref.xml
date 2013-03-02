@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	
+	<PreferenceCategory android:title="おはよう">
+		<CheckBoxPreference
+			android:key="morning_checkbox"
+			android:title="お知らせ設定"
+			android:defaultValue="false"
+            android:summary="" />
+		<Preference
+			android:key="morning_time"
+			android:title="お知らせ時間"
+            android:summary=""
+            android:dependency="morning_checkbox"
+            android:disableDependentsState="false"
+            android:dialogTitle="時間設定" />
+	</PreferenceCategory>
+	
+	<PreferenceCategory android:title="おやすみ">
+		<CheckBoxPreference
+			android:key="night_checkbox"
+			android:title="お知らせ設定"
+			android:defaultValue="false"
+            android:summary="" />
+		<Preference
+			android:key="night_time"
+			android:title="お知らせ時間"
+            android:summary=""
+            android:dependency="night_checkbox"
+            android:disableDependentsState="false"
+            android:dialogTitle="時間設定" />
+	</PreferenceCategory>
+	
+	<PreferenceCategory android:title="にんたま">
+		<CheckBoxPreference
+			android:key="nintama_checkbox"
+			android:title="お知らせ設定"
+			android:defaultValue="false"
+            android:summary="" />
+		<Preference
+			android:key="nintama_time"
+			android:title="お知らせ時間"
+            android:summary=""
+            android:dependency="nintama_checkbox"
+            android:disableDependentsState="false"
+            android:dialogTitle="時間設定" />
+	</PreferenceCategory>
+	
+	<PreferenceCategory android:title="設定">
+	    <ListPreference
+			android:key="@string/character_pref"
+			android:title="キャラクター"
+			android:defaultValue="@string/character_default_value"
+            android:summary="@string/character_default_name"
+            android:entries="@array/character_list_name"
+            android:entryValues="@array/character_list_value"
+            android:dialogTitle="キャラクター選択" />
+	    <ListPreference
+			android:key="@string/weather_pref"
+			android:title="天気予報地域"
+			android:defaultValue="@string/weather_default_value"
+            android:summary="@string/weather_default_name"
+            android:entries="@array/weather_list_name"
+            android:entryValues="@array/weather_list_value"
+            android:dialogTitle="地域選択" />
+   	    <CheckBoxPreference
+			android:key="vibration_checkbox"
+			android:title="バイブレーション"
+			android:defaultValue="false"
+            android:summary="" />
+		<CheckBoxPreference
+			android:key="led_checkbox"
+			android:title="LED"
+			android:defaultValue="false"
+            android:summary="" />
+		<RingtonePreference   
+			android:key="ringtone_pref"
+			android:title="通知音"
+			android:summary="サイレント"
+			android:defaultValue=""
+            android:dialogTitle="通知音選択" 
+		    android:ringtoneType="all">  
+		</RingtonePreference>  
+	</PreferenceCategory>
+	
+</PreferenceScreen>

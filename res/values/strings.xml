@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">いついつ</string>
+    <string name="menu_settings">設定</string>
+
+    <string name="today_name">今日</string>
+    <string name="tomorrow_name">明日</string>
+
+    <string name="log">いついつログ</string>
+
+    <string name="timing">TIMING</string>
+    <string name="weather">WEATHER</string>
+    <string name="minKion">MINKION</string>
+    <string name="maxKion">MAXKION</string>
+    <string name="character">CHARACTER</string>
+    <string name="calendar">CALENDAR</string>
+    <string name="days24">DAYS24</string>
+    <string name="days72">DAYS72</string>
+    <string name="daysother">DAYSOTHER</string>
+        
+    <string name="alarm_morning">morning</string>
+    <string name="alarm_night">night</string>
+    <string name="alarm_nintama">nintama</string>
+    
+    <string name="character_pref">character_pref</string>
+    <string name="character_list_name">character_list_name</string>
+    <string name="character_list_value">character_list_value</string>
+    <string name="character_default_name">さく</string>
+    <string name="character_default_value">sakube</string>
+    <string name="character_random">random</string>
+
+    <string name="weather_pref">weather_pref</string>
+    <string name="weather_list_name">weather_list_name</string>
+    <string name="weather_list_value">weather_list_value</string>
+    <string name="weather_default_name">神戸</string>
+    <string name="weather_default_value">82</string>
+    
+</resources>
